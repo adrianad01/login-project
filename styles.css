@@ -1,0 +1,101 @@
+/* Establecer estilos básicos para resetear márgenes y rellenos y usar la caja de modelado de borde */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para la página de inicio de sesión */
+  .login-page {
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 86.75vh;
+    grid-gap: 10px;
+    padding: 50px;
+  }
+  
+  /* Sección del Logo */
+  .logo-form {
+    background-color: #e0e0e0a8;
+    border-radius: 10px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    grid-template-rows: 87vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh;
+  }
+  .logo-form img {
+    width: auto;
+    height: 100px;
+    border-radius: 15px;
+  }
+  .logo-form h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    text-align: center;
+    color: #000000;
+    padding-top: 50px;
+  }
+  /* Formulario de inicio de sesión */
+  .form-login {
+    padding: 25px;
+    grid-template-rows: 87vh;
+    background-color: #f5a707;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-radius: 10px;
+  }
+  .form-login h2 {
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+  }
+  
+  /* Estilos para los campos de usuario y contraseña */
+  .username,
+  .password {
+    margin-bottom: 15px; /* Espacio entre los campos */
+  }
+  
+  /* Estilos para las etiquetas de los campos */
+  label {
+    display: block; /* Mostrar en bloque para tener su propio espacio */
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 25px 0 10px 0; /* Márgenes superior e inferior y cero márgenes izquierdo y derecho */
+  }
+  
+  /* Estilos para los campos de entrada */
+  input[type="text"],
+  input[type="password"] {
+    width: 60%;
+    padding: 9px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+  }
+  
+  /* Estilos para el botón de enviar */
+  button[type="submit"] {
+    width: auto;
+    padding: 10px; /* Espaciado interno */
+    background-color: #e0e0e0; /* Color de fondo */
+    color: #000000; /* Color del texto */
+    border: none; /* Quitar el borde */
+    border-radius: 3px; /* Borde redondeado */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    margin: 25px 0 10px 0;  /* Márgenes superior e inferior y cero márgenes izquierdo y derecho */
+  }
+  
+  /* Estilos para el botón de enviar al pasar el ratón por encima */
+  button[type="submit"]:hover {
+    background-color: #ffffff; /* Cambiar el color de fondo al pasar por encima */
+  }
+  
